@@ -4,7 +4,8 @@ class Todo extends Component {
     state = {
         count : 0,
         inputText: '',
-        todo: []
+        todo: [],
+        isClicked: false,
 
     }
     increase = () => {
@@ -28,6 +29,7 @@ this.setState({inputText: e.target.value})
                 <input type ="text" 
                 onChange = {this.handleTextChange}
                 value={this.state.inputText}/>
+                 <button onClick ={this.submitTodo}>Add Todo</button>
                  <button onClick ={this.submitTodo}>Add Todo</button>
                  {
                      this.state.todo.map((todo, index) => {

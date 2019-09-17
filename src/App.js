@@ -7,7 +7,7 @@ import Todo from "./components/Todo";
 function App() {
   return (
     <div className="App">
-      <Header subtitle = "here lies something new" />
+      <Header subtitle = "Let's get started" />
       <Todo />
     </div>
   );
